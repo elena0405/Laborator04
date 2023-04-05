@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsManagerActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/show_additional_fields_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_additional_fields"
+            android:layout_gravity="end">
+
+        </Button>
+
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:inputType="text"
+            android:hint="@string/Name">
+        </EditText>
+
+        <EditText
+            android:id="@+id/contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:inputType="number"
+            android:hint="@string/example_number">
+        </EditText>
+
+        <EditText
+            android:id="@+id/contact_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:inputType="textEmailAddress"
+            android:hint="@string/Email">
+        </EditText>
+
+        <EditText
+            android:id="@+id/contact_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:inputType="text"
+            android:hint="@string/Address">
+        </EditText>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/save_button"
+                android:text="@string/Save"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3">
+
+            </Button>
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:text="@string/Cancel"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_row="1"
+                android:layout_column="4">
+
+            </Button>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/additional_fields_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/contact_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="@string/Job">
+            </EditText>
+
+            <EditText
+                android:id="@+id/contact_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="@string/Company">
+            </EditText>
+
+            <EditText
+                android:id="@+id/contact_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="@string/Website">
+            </EditText>
+
+            <EditText
+                android:id="@+id/contact_im"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:saveEnabled="false"
+                android:inputType="text"
+                android:hint="@string/im">
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
