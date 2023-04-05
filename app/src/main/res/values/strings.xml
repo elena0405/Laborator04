@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contacts Activity</string>
+    <string name="show_additional_fields">SHOW ADDITIONAL FIELDS</string>
+    <string name="Name">Name</string>
+    <string name="example_number">1122334455</string>
+    <string name="Email">Email</string>
+    <string name="Address">Address</string>
+    <string name="Save">Save</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Job">Job Title</string>
+    <string name="Company">Company</string>
+    <string name="Website">Website</string>
+    <string name="im">IM</string>
+</resources>
